@@ -1,0 +1,18 @@
+pipeline {
+	agent {
+	    label 'linux-slave-cred'  
+	}
+	stages{
+	    stage('demo'){
+			steps{
+ 				echo "slveeeeeeeeeeeeeeeeeeee"
+			}
+	       
+	    }
+		
+        
+	}
+	
+
+
+}
