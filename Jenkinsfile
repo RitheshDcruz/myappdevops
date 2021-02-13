@@ -9,7 +9,7 @@ node {
 		}
 		stage('Compile package'){
 			def maven_home = tool name: 'maven-3', type: 'maven'
-			sh "${mvnHome}/bin/mvn package"
+			sh "${maven_home}/bin/mvn package"
 		}
 	       
 	
