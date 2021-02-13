@@ -3,10 +3,11 @@ pipeline {
 	    label 'linux-slave'  
 	}
 	stages{
-	    stage('scm checkout '){
-			steps{
- 				echo "slveeeeeeeeeeeeeeeeeeee"
-				git 'https://github.com/RitheshDcruz/myappdevops.git'
+	    	stage('scm checkout '){
+				steps{
+ 					echo "slveeeeeeeeeeeeeeeeeeee"
+					git 'https://github.com/RitheshDcruz/myappdevops.git'
+				}
 			}
 			stage('Compile package')
 			{
