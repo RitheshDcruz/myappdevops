@@ -14,13 +14,13 @@ node {
 		stage('Email notification'){
 			mail bcc: 'ritheshdcruz30@gmail.com', body: '''Hi,
 
-			Just testing every email we sent
+			Joshita is crazy
 
 			Regards,
 			Rithesh D\'cruz''', cc: 'ritheshdcruz30@gmail.com', from: 'ritheshdcruz30@gmail.com', replyTo: '', subject: 'Test email', to: 'ritheshdcruz30@gmail.com'
 		}
 		stage('Slack notification'){
-			def message ="Hi from Rithesh"
+			def message ="Rithesh agress Joshita is crazy"
 			slackSend baseUrl: 'https://hooks.slack.com/services/', 
 			channel: '#devops', 
 			message: "${message}", 
