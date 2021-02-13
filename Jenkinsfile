@@ -20,7 +20,7 @@ node {
 			Rithesh D\'cruz''', cc: 'ritheshdcruz30@gmail.com', from: 'ritheshdcruz30@gmail.com', replyTo: '', subject: 'Test email', to: 'ritheshdcruz30@gmail.com'
 		}
 		stage('Slack notification'){
-			def maven_home ="Hi from Rithesh"
+			def message ="Hi from Rithesh"
 			slackSend baseUrl: 'https://hooks.slack.com/services/', 
 			channel: '#devops', 
 			message: "${message}", 
