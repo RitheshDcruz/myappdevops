@@ -1,27 +1,17 @@
-pipeline {
-	agent {
-	    label 'linux-slave'  
-	}
-	stages{
+node {
+	
+	
 	    stage('scm checkout'){
-			steps{
- 				echo "slveeeeeeeeeeeeeeeeeeee"
-				git 'https://github.com/RitheshDcruz/myappdevops.git'
-			}
+			
+ 			echo "slveeeeeeeeeeeeeeeeeeee"
+			git 'https://github.com/RitheshDcruz/myappdevops.git'
+			
 		}
 		stage('Compile package'){
-			
-			def maven_home=tool name: 'maven-3', type: 'maven'
+			def maven_home = tool name: 'maven-3', type: 'maven'
 			sh "${mvnHome}/bin/mvn package"
-
-			
 		}
 	       
-	    
-		
-        
-	}
 	
-
-
+	
 }
